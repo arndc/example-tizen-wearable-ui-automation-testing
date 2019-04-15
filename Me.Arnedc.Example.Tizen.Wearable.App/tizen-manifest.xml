@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest package="me.arnedc.example.tizen.wearable.uitest.app" version="1.0.0" api-version="4" xmlns="http://tizen.org/ns/packages">
+    <author>Arne De Cock</author>
+    <profile name="wearable" />
+    <ui-application appid="me.arnedc.example.tizen.wearable.uitest.app" 
+                    exec="Me.Arnedc.Tizen.Wearable.Example.UITest.App.dll" 
+                    multiple="false" 
+                    nodisplay="false" 
+                    taskmanage="true" 
+                    type="dotnet" 
+                    launch_mode="single">
+        <label>UI Test App</label>
+        <icon>DefaultIcon.png</icon>
+        <metadata key="http://tizen.org/metadata/prefer_dotnet_aot" value="true" />
+    </ui-application>
+</manifest>

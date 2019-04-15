@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c:CirclePage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+             x:Class="Me.Arnedc.Example.Tizen.Wearable.App.MainPage">
+  <c:CirclePage.Content>
+        <c:CircleScrollView x:Name="ScrollView" Orientation="Vertical">
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Label x:Name="LabelOnOff" HorizontalOptions="Center" Text="Onoff" />
+                <c:Check
+                    AutomationId="onOff"
+                    DisplayStyle="Onoff"
+                    HorizontalOptions="Center"
+                    IsToggled="False"
+                    Toggled="OnToggledOnOff" />
+            </StackLayout>
+        </c:CircleScrollView>
+    </c:CirclePage.Content>
+</c:CirclePage>
